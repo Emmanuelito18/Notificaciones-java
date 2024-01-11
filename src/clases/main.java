@@ -78,8 +78,8 @@ public class main {
     //</editor-fold>
     
     //<editor-fold defaultstate="collapsed" desc="Notificacion DS">
-    void notificacionDS(){
-     DesktopNotify.showDesktopMessage("Notificacion DS","Esto es una prueba de notificaiones de Dragshot",DesktopNotify.INFORMATION,7000L);   
+    public void notificacionDS(){
+     DesktopNotify.showDesktopMessage("Notificacion DS","Esto es una prueba de notificaciones de Dragshot",DesktopNotify.INFORMATION,10000L);   
     }
     //</editor-fold>
     
