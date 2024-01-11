@@ -5,6 +5,8 @@
  */
 package clases;
 
+import formularios.principalNotificaciones;
+
 /**
  *
  * @author Emmanuel
@@ -16,6 +18,9 @@ public class main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        principalNotificaciones p=new principalNotificaciones();
+        p.setVisible(true);
+        p.setLocationRelativeTo(null);
     }
     
 }
