@@ -5,6 +5,8 @@
  */
 package formularios;
 
+import clases.main;
+
 /**
  *
  * @author Emmanuel
@@ -67,10 +69,20 @@ public class principalNotificaciones extends javax.swing.JFrame {
         lbl_opcionesNotificaciones.setText("Opciones de notificaciones");
 
         btn_notificacionesJava.setText("Java");
+        btn_notificacionesJava.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_notificacionesJavaActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("jButton2");
 
         btn_notificacionesDS.setText("DS");
+        btn_notificacionesDS.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_notificacionesDSActionPerformed(evt);
+            }
+        });
 
         jButton4.setText("jButton4");
 
@@ -110,6 +122,17 @@ public class principalNotificaciones extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btn_notificacionesDSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_notificacionesDSActionPerformed
+        // TODO add your handling code here:
+        main notificacion=new main();
+        notificacion.notificacionDS();
+    }//GEN-LAST:event_btn_notificacionesDSActionPerformed
+
+    private void btn_notificacionesJavaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_notificacionesJavaActionPerformed
+        // TODO add your handling code here:
+        System.out.println("Aún falta por implementar las notificaciones de java");
+    }//GEN-LAST:event_btn_notificacionesJavaActionPerformed
 
     /**
      * @param args the command line arguments
