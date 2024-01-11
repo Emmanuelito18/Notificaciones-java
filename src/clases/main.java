@@ -5,7 +5,6 @@
  */
 package clases;
 
-import ds.desktop.notify.DesktopNotify;
 import formularios.principalNotificaciones;
 //<editor-fold defaultstate="collapsed" desc="Librerias notificacion java">
 /*import java.awt.AWTException;
