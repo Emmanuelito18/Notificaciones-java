@@ -5,9 +5,10 @@
  */
 package clases;
 
+import ds.desktop.notify.DesktopNotify;
 import formularios.principalNotificaciones;
 //<editor-fold defaultstate="collapsed" desc="Librerias notificacion java">
-import java.awt.AWTException;
+/*import java.awt.AWTException;
 import java.awt.Image;
 import java.awt.MenuItem;
 import java.awt.PopupMenu;
@@ -20,16 +21,19 @@ import java.awt.event.MouseListener;
 import java.util.Timer;
 import java.util.TimerTask;
 import javax.swing.ImageIcon;
-import javax.swing.JOptionPane;
+import javax.swing.JOptionPane;*/
 //</editor-fold>
 
+//<editor-fold defaultstate="collapsed" desc="Librerias notifiacion DS">
+import ds.desktop.notify.DesktopNotify;
+//</editor-fold>
 /**
  *
  * @author Emmanuel
  */
 public class main {
     //<editor-fold defaultstate="collapsed" desc="Notificacion java">
-    PopupMenu popup=new PopupMenu();
+    /*PopupMenu popup=new PopupMenu();
     private Image imagen=new ImageIcon(getClass().getResource("/imagenes/notificacion.png")).getImage();
     private final TrayIcon trayIcon=new TrayIcon(imagen,"Notificación java",popup);
     //obtiene instancia SsytemTray
@@ -70,6 +74,12 @@ public class main {
             };
             //acciones del menu popup
         }
+    }*/
+    //</editor-fold>
+    
+    //<editor-fold defaultstate="collapsed" desc="Notificacion DS">
+    void notificacionDS(){
+     DesktopNotify.showDesktopMessage("Notificacion DS","Esto es una prueba de notificaiones de Dragshot",DesktopNotify.INFORMATION,7000L);   
     }
     //</editor-fold>
     
