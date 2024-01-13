@@ -23,7 +23,7 @@ import java.awt.Toolkit;
  */
 public class main {
     //<editor-fold defaultstate="collapsed" desc="Notificacion java">
-    private static void mostrarNotificacion(String titulo, String mensaje) {
+    public static void mostrarNotificacion(String titulo, String mensaje) {
         // Verifica si el sistema soporta la bandeja del sistema
         if (SystemTray.isSupported()) {
             // Obtiene la instancia de SystemTray
