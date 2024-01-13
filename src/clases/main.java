@@ -17,6 +17,10 @@ import java.awt.TrayIcon;
 import ds.desktop.notify.DesktopNotify;
 import java.awt.Toolkit;
 //</editor-fold>
+
+//<editor-fold defaultstate="collapsed" desc="Librerias notifiacion RS">
+
+//</editor-fold>
 /**
  *
  * @author Emmanuel
@@ -56,6 +60,12 @@ public class main {
     public void notificacionDS(){
      DesktopNotify.showDesktopMessage("Notificacion DS","Esto es una prueba de notificaciones de Dragshot",DesktopNotify.INFORMATION,10000L);   
     }
+    //</editor-fold>
+    
+    //<editor-fold defaultstate="collapsed" desc="Notifiacion RS">
+        public void notificacionRS(){
+            
+        }
     //</editor-fold>
     
     //<editor-fold defaultstate="collapsed" desc="Función principal del programa">
