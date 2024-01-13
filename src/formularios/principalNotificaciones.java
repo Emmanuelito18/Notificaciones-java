@@ -7,6 +7,8 @@ package formularios;
 
 import clases.main;
 import static clases.main.mostrarNotificacion;
+import static clases.main.notificacionRS;
+
 
 /**
  *
@@ -35,8 +37,8 @@ public class principalNotificaciones extends javax.swing.JFrame {
         pnl_cuerpo = new javax.swing.JPanel();
         lbl_opcionesNotificaciones = new javax.swing.JLabel();
         btn_notificacionesJava = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
         btn_notificacionesDS = new javax.swing.JButton();
+        btn_notificacionesRS = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -76,12 +78,17 @@ public class principalNotificaciones extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setText("jButton2");
-
         btn_notificacionesDS.setText("DS");
         btn_notificacionesDS.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_notificacionesDSActionPerformed(evt);
+            }
+        });
+
+        btn_notificacionesRS.setText("RS");
+        btn_notificacionesRS.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_notificacionesRSActionPerformed(evt);
             }
         });
 
@@ -99,7 +106,7 @@ public class principalNotificaciones extends javax.swing.JFrame {
                     .addComponent(btn_notificacionesDS))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(pnl_cuerpoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton2)
+                    .addComponent(btn_notificacionesRS)
                     .addComponent(jButton4))
                 .addGap(42, 42, 42))
         );
@@ -111,7 +118,7 @@ public class principalNotificaciones extends javax.swing.JFrame {
                 .addGap(36, 36, 36)
                 .addGroup(pnl_cuerpoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn_notificacionesJava)
-                    .addComponent(jButton2))
+                    .addComponent(btn_notificacionesRS))
                 .addGap(54, 54, 54)
                 .addGroup(pnl_cuerpoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn_notificacionesDS)
@@ -134,6 +141,11 @@ public class principalNotificaciones extends javax.swing.JFrame {
         // TODO add your handling code here:
         mostrarNotificacion("Notificación Java","Esta es una notificación de java");
     }//GEN-LAST:event_btn_notificacionesJavaActionPerformed
+
+    private void btn_notificacionesRSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_notificacionesRSActionPerformed
+        // TODO add your handling code here:
+        notificacionRS();
+    }//GEN-LAST:event_btn_notificacionesRSActionPerformed
 
     /**
      * @param args the command line arguments
@@ -173,7 +185,7 @@ public class principalNotificaciones extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_notificacionesDS;
     private javax.swing.JButton btn_notificacionesJava;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btn_notificacionesRS;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel lbl_opcionesNotificaciones;
     private javax.swing.JLabel lbl_titulo;
