@@ -6,6 +6,7 @@
 package formularios;
 
 import clases.main;
+import static clases.main.mostrarNotificacion;
 
 /**
  *
@@ -131,7 +132,7 @@ public class principalNotificaciones extends javax.swing.JFrame {
 
     private void btn_notificacionesJavaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_notificacionesJavaActionPerformed
         // TODO add your handling code here:
-        System.out.println("Aún falta por implementar las notificaciones de java");
+        mostrarNotificacion("Notificación Java","Esta es una notificación de java");
     }//GEN-LAST:event_btn_notificacionesJavaActionPerformed
 
     /**
