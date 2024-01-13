@@ -16,10 +16,11 @@ import java.awt.TrayIcon;
 //<editor-fold defaultstate="collapsed" desc="Librerias notifiacion DS">
 import ds.desktop.notify.DesktopNotify;
 import java.awt.Toolkit;
+import rojerusan.RSNotifyFade;
 //</editor-fold>
 
 //<editor-fold defaultstate="collapsed" desc="Librerias notifiacion RS">
-
+import rojerusan.*;
 //</editor-fold>
 /**
  *
@@ -58,14 +59,18 @@ public class main {
     
     //<editor-fold defaultstate="collapsed" desc="Notificacion DS">
     public void notificacionDS(){
-     DesktopNotify.showDesktopMessage("Notificacion DS","Esto es una prueba de notificaciones de Dragshot",DesktopNotify.INFORMATION,10000L);   
+     DesktopNotify.showDesktopMessage("Notificacion DS","Esto es una notificaciones de Dragshot",DesktopNotify.INFORMATION,10000L);   
     }
     //</editor-fold>
     
     //<editor-fold defaultstate="collapsed" desc="Notifiacion RS">
-        public void notificacionRS(){
-            
-        }
+    public static void notificacionRS(){
+        new rojerusan.RSNotifyFade("Notificación RS", "Esto es una notificación de RojeruSan", 10, RSNotifyFade.PositionNotify.TopLef, RSNotifyFade.TypeNotify.ERROR).setVisible(true);
+        new rojerusan.RSNotifyFade("Notificación RS", "Esto es una notificación de RojeruSan", 10, RSNotifyFade.PositionNotify.TopRight, RSNotifyFade.TypeNotify.INFORMATION).setVisible(true);
+        new rojerusan.RSNotifyFade("Notificación RS", "Esto es una notificación de RojeruSan", 10, RSNotifyFade.PositionNotify.BottomLeft, RSNotifyFade.TypeNotify.SUCCESS).setVisible(true);
+        new rojerusan.RSNotifyFade("Notificación RS", "Esto es una notificación de RojeruSan", 10, RSNotifyFade.PositionNotify.BottomRight, RSNotifyFade.TypeNotify.WARNING).setVisible(true);
+        //El número entero indica el tiempo en segundos
+    }
     //</editor-fold>
     
     //<editor-fold defaultstate="collapsed" desc="Función principal del programa">
