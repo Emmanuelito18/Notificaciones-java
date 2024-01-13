@@ -78,14 +78,14 @@ public class principalNotificaciones extends javax.swing.JFrame {
             }
         });
 
-        btn_notificacionesDS.setText("DS");
+        btn_notificacionesDS.setText("DragShot");
         btn_notificacionesDS.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_notificacionesDSActionPerformed(evt);
             }
         });
 
-        btn_notificacionesRS.setText("RS");
+        btn_notificacionesRS.setText("RojeruSan");
         btn_notificacionesRS.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_notificacionesRSActionPerformed(evt);
@@ -98,13 +98,16 @@ public class principalNotificaciones extends javax.swing.JFrame {
         pnl_cuerpo.setLayout(pnl_cuerpoLayout);
         pnl_cuerpoLayout.setHorizontalGroup(
             pnl_cuerpoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lbl_opcionesNotificaciones, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+            .addComponent(lbl_opcionesNotificaciones, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(pnl_cuerpoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(pnl_cuerpoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btn_notificacionesJava)
-                    .addComponent(btn_notificacionesDS))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(pnl_cuerpoLayout.createSequentialGroup()
+                        .addComponent(btn_notificacionesJava)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(pnl_cuerpoLayout.createSequentialGroup()
+                        .addComponent(btn_notificacionesDS)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGroup(pnl_cuerpoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btn_notificacionesRS)
                     .addComponent(jButton4))
@@ -123,7 +126,7 @@ public class principalNotificaciones extends javax.swing.JFrame {
                 .addGroup(pnl_cuerpoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn_notificacionesDS)
                     .addComponent(jButton4))
-                .addContainerGap(71, Short.MAX_VALUE))
+                .addContainerGap(78, Short.MAX_VALUE))
         );
 
         getContentPane().add(pnl_cuerpo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 400, 240));
