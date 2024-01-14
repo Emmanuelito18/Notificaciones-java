@@ -73,6 +73,14 @@ public class main {
     }
     //</editor-fold>
     
+    //<editor-fold defaultstate="collapsed" desc="Notifiacion personalizada1">
+    
+    //</editor-fold>
+    
+    //<editor-fold defaultstate="collapsed" desc="Notifiacion personalizada2">
+    
+    //</editor-fold>
+    
     //<editor-fold defaultstate="collapsed" desc="Función principal del programa">
     /**
      * @param args the command line arguments
