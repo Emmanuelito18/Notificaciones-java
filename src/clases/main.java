@@ -35,7 +35,7 @@ public class main {
             SystemTray tray = SystemTray.getSystemTray();
             
             // Carga una imagen para el icono de la bandeja del sistema
-            Image icono = Toolkit.getDefaultToolkit().getImage("//notificacion.png"); // Cambia la ruta al icono deseado
+            Image icono = Toolkit.getDefaultToolkit().getImage("src/imagenes/notificacion.png"); // Cambia la ruta al icono deseado
 
             // Crea un nuevo TrayIcon
             TrayIcon trayIcon = new TrayIcon(icono, "Notificación Windows 10");
