@@ -20,7 +20,7 @@ import rojerusan.RSNotifyFade;
 //</editor-fold>
 
 //<editor-fold defaultstate="collapsed" desc="Librerias notifiacion RS">
-import rojerusan.*;
+import rojerusan.*;//Esta libreria puede ser eliminada
 //</editor-fold>
 /**
  *
@@ -59,7 +59,7 @@ public class main {
     
     //<editor-fold defaultstate="collapsed" desc="Notificacion DS">
     public void notificacionDS(){
-     DesktopNotify.showDesktopMessage("Notificacion DS","Esto es una notificaciones de Dragshot",DesktopNotify.INFORMATION,10000L);   
+     DesktopNotify.showDesktopMessage("Notificacion DS","Esto es una notificaciones de Dragshot",DesktopNotify.INFORMATION,10000L);
     }
     //</editor-fold>
     
