@@ -135,18 +135,15 @@ public class principalNotificaciones extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_notificacionesDSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_notificacionesDSActionPerformed
-        // TODO add your handling code here:
         main notificacion=new main();
         notificacion.notificacionDS();
     }//GEN-LAST:event_btn_notificacionesDSActionPerformed
 
     private void btn_notificacionesJavaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_notificacionesJavaActionPerformed
-        // TODO add your handling code here:
         mostrarNotificacion("Notificación Java","Esta es una notificación de java");
     }//GEN-LAST:event_btn_notificacionesJavaActionPerformed
 
     private void btn_notificacionesRSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_notificacionesRSActionPerformed
-        // TODO add your handling code here:
         notificacionRS();
     }//GEN-LAST:event_btn_notificacionesRSActionPerformed
 
