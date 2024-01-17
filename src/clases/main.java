@@ -15,7 +15,7 @@ import java.awt.TrayIcon;
 
 //<editor-fold defaultstate="collapsed" desc="Librerias notifiacion DS">
 import ds.desktop.notify.DesktopNotify;
-import formularios.notificacionPersonalizada1;
+import formularios.notificacionPersonalizada;
 import java.awt.Toolkit;
 import rojerusan.RSNotifyFade;
 //</editor-fold>
@@ -79,8 +79,8 @@ public class main {
     //</editor-fold>
     
     //<editor-fold defaultstate="collapsed" desc="Notifiacion personalizada1">
-    public static void notificacionPersonalizada1(){
-        notificacionPersonalizada1 notificacionP=new notificacionPersonalizada1();
+    public static void notificacionPersonalizadaF(){
+        notificacionPersonalizada notificacionP=new notificacionPersonalizada();
         Notification obj=new Notification(notificacionP,WindowPosition.BOTTOMRIGHT,0,0,10000);
         NotificationQueue val=new NotificationQueue();
         val.add(obj);

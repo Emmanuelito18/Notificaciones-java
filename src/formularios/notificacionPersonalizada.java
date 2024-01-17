@@ -8,12 +8,12 @@ package formularios;
  *
  * @author Emmanuel
  */
-public class notificacionPersonalizada1 extends javax.swing.JFrame {
+public class notificacionPersonalizada extends javax.swing.JFrame {
 
     /**
      * Creates new form notificacionPersonalizada1
      */
-    public notificacionPersonalizada1() {
+    public notificacionPersonalizada() {
         initComponents();
     }
 
@@ -123,20 +123,21 @@ public class notificacionPersonalizada1 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(notificacionPersonalizada1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(notificacionPersonalizada.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(notificacionPersonalizada1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(notificacionPersonalizada.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(notificacionPersonalizada1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(notificacionPersonalizada.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(notificacionPersonalizada1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(notificacionPersonalizada.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new notificacionPersonalizada1().setVisible(true);
+                new notificacionPersonalizada().setVisible(true);
             }
         });
     }

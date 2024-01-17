@@ -7,7 +7,7 @@ package formularios;
 
 import clases.main;
 import static clases.main.mostrarNotificacion;
-import static clases.main.notificacionPersonalizada1;
+import static clases.main.notificacionPersonalizadaF;
 import static clases.main.notificacionRS;
 
 
@@ -93,7 +93,7 @@ public class principalNotificaciones extends javax.swing.JFrame {
             }
         });
 
-        btn_notificacionPersonalizada.setText("personalizada 1");
+        btn_notificacionPersonalizada.setText("personalizada");
         btn_notificacionPersonalizada.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_notificacionPersonalizadaActionPerformed(evt);
@@ -151,7 +151,7 @@ public class principalNotificaciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_notificacionesRSActionPerformed
 
     private void btn_notificacionPersonalizadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_notificacionPersonalizadaActionPerformed
-        notificacionPersonalizada1();
+        notificacionPersonalizadaF();
     }//GEN-LAST:event_btn_notificacionPersonalizadaActionPerformed
 
     /**
