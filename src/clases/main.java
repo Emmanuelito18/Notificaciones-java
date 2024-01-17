@@ -15,12 +15,17 @@ import java.awt.TrayIcon;
 
 //<editor-fold defaultstate="collapsed" desc="Librerias notifiacion DS">
 import ds.desktop.notify.DesktopNotify;
+import formularios.notificacionPersonalizada1;
 import java.awt.Toolkit;
 import rojerusan.RSNotifyFade;
 //</editor-fold>
 
 //<editor-fold defaultstate="collapsed" desc="Librerias notifiacion RS">
 import rojerusan.*;//Esta libreria puede ser eliminada
+//</editor-fold>
+
+//<editor-fold defaultstate="collapsed" desc="Librerias notificacion personalizada1">
+import net.sf.jcarrierpigeon.*;
 //</editor-fold>
 /**
  *
@@ -74,8 +79,11 @@ public class main {
     //</editor-fold>
     
     //<editor-fold defaultstate="collapsed" desc="Notifiacion personalizada1">
-    public void notificacionPersonalizada1(){
-        
+    public static void notificacionPersonalizada1(){
+        notificacionPersonalizada1 notificacionP=new notificacionPersonalizada1();
+        Notification obj=new Notification(notificacionP,WindowPosition.BOTTOMRIGHT,0,0,10000);
+        NotificationQueue val=new NotificationQueue();
+        val.add(obj);
     }
     //</editor-fold>
     
