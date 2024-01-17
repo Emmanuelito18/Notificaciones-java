@@ -33,6 +33,9 @@ public class notificacionPersonalizada1 extends javax.swing.JFrame {
         lbl_tiutlo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Notifiación personalizada 1");
+        setUndecorated(true);
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         pnl_cuerpoNotificacion.setBackground(new java.awt.Color(255, 255, 255));
@@ -64,14 +67,15 @@ public class notificacionPersonalizada1 extends javax.swing.JFrame {
         pnl_tituloNotificacion.setBackground(new java.awt.Color(0, 51, 255));
 
         lbl_tiutlo.setFont(new java.awt.Font("Lucida Handwriting", 0, 18)); // NOI18N
+        lbl_tiutlo.setForeground(new java.awt.Color(255, 255, 255));
         lbl_tiutlo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbl_tiutlo.setText("Esta es una notificacion personalizda");
+        lbl_tiutlo.setText("Esta es una notificacion personalizada");
 
         javax.swing.GroupLayout pnl_tituloNotificacionLayout = new javax.swing.GroupLayout(pnl_tituloNotificacion);
         pnl_tituloNotificacion.setLayout(pnl_tituloNotificacionLayout);
         pnl_tituloNotificacionLayout.setHorizontalGroup(
             pnl_tituloNotificacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lbl_tiutlo, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+            .addComponent(lbl_tiutlo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         pnl_tituloNotificacionLayout.setVerticalGroup(
             pnl_tituloNotificacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
