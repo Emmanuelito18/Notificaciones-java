@@ -74,7 +74,9 @@ public class main {
     //</editor-fold>
     
     //<editor-fold defaultstate="collapsed" desc="Notifiacion personalizada1">
-    
+    public void notificacionPersonalizada1(){
+        
+    }
     //</editor-fold>
     
     //<editor-fold defaultstate="collapsed" desc="Notifiacion personalizada2">
