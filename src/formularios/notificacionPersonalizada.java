@@ -31,6 +31,7 @@ public class notificacionPersonalizada extends javax.swing.JFrame {
         lbl_tiutlo = new javax.swing.JLabel();
         pnl_cuerpoNotificacion = new javax.swing.JPanel();
         btn_aceptar = new javax.swing.JButton();
+        lbl_cuerpoNotificacion = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Notifiación personalizada 1");
@@ -43,7 +44,7 @@ public class notificacionPersonalizada extends javax.swing.JFrame {
         lbl_tiutlo.setFont(new java.awt.Font("Lucida Handwriting", 0, 18)); // NOI18N
         lbl_tiutlo.setForeground(new java.awt.Color(255, 255, 255));
         lbl_tiutlo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbl_tiutlo.setText("Esta es una notificacion personalizada");
+        lbl_tiutlo.setText("Notificación personalizada");
 
         javax.swing.GroupLayout pnl_tituloNotificacionLayout = new javax.swing.GroupLayout(pnl_tituloNotificacion);
         pnl_tituloNotificacion.setLayout(pnl_tituloNotificacionLayout);
@@ -65,6 +66,11 @@ public class notificacionPersonalizada extends javax.swing.JFrame {
             }
         });
 
+        lbl_cuerpoNotificacion.setFont(new java.awt.Font("Lucida Handwriting", 0, 14)); // NOI18N
+        lbl_cuerpoNotificacion.setForeground(new java.awt.Color(0, 0, 0));
+        lbl_cuerpoNotificacion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbl_cuerpoNotificacion.setText("Esta es una notificación personalizada");
+
         javax.swing.GroupLayout pnl_cuerpoNotificacionLayout = new javax.swing.GroupLayout(pnl_cuerpoNotificacion);
         pnl_cuerpoNotificacion.setLayout(pnl_cuerpoNotificacionLayout);
         pnl_cuerpoNotificacionLayout.setHorizontalGroup(
@@ -73,13 +79,16 @@ public class notificacionPersonalizada extends javax.swing.JFrame {
                 .addGap(162, 162, 162)
                 .addComponent(btn_aceptar)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(lbl_cuerpoNotificacion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         pnl_cuerpoNotificacionLayout.setVerticalGroup(
             pnl_cuerpoNotificacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnl_cuerpoNotificacionLayout.createSequentialGroup()
-                .addGap(50, 50, 50)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnl_cuerpoNotificacionLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lbl_cuerpoNotificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btn_aceptar)
-                .addContainerGap(36, Short.MAX_VALUE))
+                .addGap(18, 18, 18))
         );
 
         javax.swing.GroupLayout pnl_principalLayout = new javax.swing.GroupLayout(pnl_principal);
@@ -145,6 +154,7 @@ public class notificacionPersonalizada extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_aceptar;
+    private javax.swing.JLabel lbl_cuerpoNotificacion;
     private javax.swing.JLabel lbl_tiutlo;
     private javax.swing.JPanel pnl_cuerpoNotificacion;
     private javax.swing.JPanel pnl_principal;
