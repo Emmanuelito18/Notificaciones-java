@@ -24,7 +24,7 @@ import rojerusan.RSNotifyFade;
 import rojerusan.*;//Esta libreria puede ser eliminada
 //</editor-fold>
 
-//<editor-fold defaultstate="collapsed" desc="Librerias notificacion personalizada1">
+//<editor-fold defaultstate="collapsed" desc="Librerias notificacion personalizada">
 import net.sf.jcarrierpigeon.*;
 //</editor-fold>
 /**
@@ -78,7 +78,7 @@ public class main {
     }
     //</editor-fold>
     
-    //<editor-fold defaultstate="collapsed" desc="Notifiacion personalizada1">
+    //<editor-fold defaultstate="collapsed" desc="Notifiacion personalizada">
     public static void notificacionPersonalizadaF(){
         notificacionPersonalizada notificacionP=new notificacionPersonalizada();
         Notification notificacionAbajoDerecha=new Notification(notificacionP,WindowPosition.BOTTOMRIGHT,0,0,10000);
@@ -91,10 +91,6 @@ public class main {
         cola.add(notificacionArribaDerecha);
         cola.add(notificacionArribaIzquierda);
     }
-    //</editor-fold>
-    
-    //<editor-fold defaultstate="collapsed" desc="Notifiacion personalizada2">
-    
     //</editor-fold>
     
     //<editor-fold defaultstate="collapsed" desc="Función principal del programa">
