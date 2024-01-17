@@ -27,16 +27,34 @@ public class notificacionPersonalizada extends javax.swing.JFrame {
     private void initComponents() {
 
         pnl_principal = new javax.swing.JPanel();
-        pnl_cuerpoNotificacion = new javax.swing.JPanel();
-        btn_aceptar = new javax.swing.JButton();
         pnl_tituloNotificacion = new javax.swing.JPanel();
         lbl_tiutlo = new javax.swing.JLabel();
+        pnl_cuerpoNotificacion = new javax.swing.JPanel();
+        btn_aceptar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Notifiación personalizada 1");
         setUndecorated(true);
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        pnl_tituloNotificacion.setBackground(new java.awt.Color(0, 51, 255));
+
+        lbl_tiutlo.setFont(new java.awt.Font("Lucida Handwriting", 0, 18)); // NOI18N
+        lbl_tiutlo.setForeground(new java.awt.Color(255, 255, 255));
+        lbl_tiutlo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbl_tiutlo.setText("Esta es una notificacion personalizada");
+
+        javax.swing.GroupLayout pnl_tituloNotificacionLayout = new javax.swing.GroupLayout(pnl_tituloNotificacion);
+        pnl_tituloNotificacion.setLayout(pnl_tituloNotificacionLayout);
+        pnl_tituloNotificacionLayout.setHorizontalGroup(
+            pnl_tituloNotificacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lbl_tiutlo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        pnl_tituloNotificacionLayout.setVerticalGroup(
+            pnl_tituloNotificacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lbl_tiutlo, javax.swing.GroupLayout.DEFAULT_SIZE, 59, Short.MAX_VALUE)
+        );
 
         pnl_cuerpoNotificacion.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -61,25 +79,7 @@ public class notificacionPersonalizada extends javax.swing.JFrame {
             .addGroup(pnl_cuerpoNotificacionLayout.createSequentialGroup()
                 .addGap(50, 50, 50)
                 .addComponent(btn_aceptar)
-                .addContainerGap(51, Short.MAX_VALUE))
-        );
-
-        pnl_tituloNotificacion.setBackground(new java.awt.Color(0, 51, 255));
-
-        lbl_tiutlo.setFont(new java.awt.Font("Lucida Handwriting", 0, 18)); // NOI18N
-        lbl_tiutlo.setForeground(new java.awt.Color(255, 255, 255));
-        lbl_tiutlo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbl_tiutlo.setText("Esta es una notificacion personalizada");
-
-        javax.swing.GroupLayout pnl_tituloNotificacionLayout = new javax.swing.GroupLayout(pnl_tituloNotificacion);
-        pnl_tituloNotificacion.setLayout(pnl_tituloNotificacionLayout);
-        pnl_tituloNotificacionLayout.setHorizontalGroup(
-            pnl_tituloNotificacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lbl_tiutlo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        pnl_tituloNotificacionLayout.setVerticalGroup(
-            pnl_tituloNotificacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lbl_tiutlo, javax.swing.GroupLayout.DEFAULT_SIZE, 59, Short.MAX_VALUE)
+                .addContainerGap(36, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout pnl_principalLayout = new javax.swing.GroupLayout(pnl_principal);
@@ -94,7 +94,8 @@ public class notificacionPersonalizada extends javax.swing.JFrame {
             .addGroup(pnl_principalLayout.createSequentialGroup()
                 .addComponent(pnl_tituloNotificacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(pnl_cuerpoNotificacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(pnl_cuerpoNotificacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(23, 23, 23))
         );
 
         getContentPane().add(pnl_principal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 180));
