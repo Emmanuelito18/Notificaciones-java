@@ -81,9 +81,15 @@ public class main {
     //<editor-fold defaultstate="collapsed" desc="Notifiacion personalizada1">
     public static void notificacionPersonalizadaF(){
         notificacionPersonalizada notificacionP=new notificacionPersonalizada();
-        Notification obj=new Notification(notificacionP,WindowPosition.BOTTOMRIGHT,0,0,10000);
-        NotificationQueue val=new NotificationQueue();
-        val.add(obj);
+        Notification notificacionAbajoDerecha=new Notification(notificacionP,WindowPosition.BOTTOMRIGHT,0,0,10000);
+        Notification notificacionAbajoIzquierda=new Notification(notificacionP,WindowPosition.BOTTOMLEFT,0,0,10000);
+        Notification notificacionArribaDerecha=new Notification(notificacionP,WindowPosition.TOPRIGHT,0,0,10000);
+        Notification notificacionArribaIzquierda=new Notification(notificacionP,WindowPosition.TOPLEFT,0,0,10000);
+        NotificationQueue cola=new NotificationQueue();
+        cola.add(notificacionAbajoDerecha);
+        cola.add(notificacionAbajoIzquierda);
+        cola.add(notificacionArribaDerecha);
+        cola.add(notificacionArribaIzquierda);
     }
     //</editor-fold>
     
