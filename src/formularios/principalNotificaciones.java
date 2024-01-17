@@ -7,6 +7,7 @@ package formularios;
 
 import clases.main;
 import static clases.main.mostrarNotificacion;
+import static clases.main.notificacionPersonalizada1;
 import static clases.main.notificacionRS;
 
 
@@ -39,7 +40,7 @@ public class principalNotificaciones extends javax.swing.JFrame {
         btn_notificacionesJava = new javax.swing.JButton();
         btn_notificacionesDS = new javax.swing.JButton();
         btn_notificacionesRS = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        btn_notificacionPersonalizada = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Prueba de notificaciones en Java");
@@ -92,7 +93,12 @@ public class principalNotificaciones extends javax.swing.JFrame {
             }
         });
 
-        jButton4.setText("jButton4");
+        btn_notificacionPersonalizada.setText("personalizada 1");
+        btn_notificacionPersonalizada.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_notificacionPersonalizadaActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnl_cuerpoLayout = new javax.swing.GroupLayout(pnl_cuerpo);
         pnl_cuerpo.setLayout(pnl_cuerpoLayout);
@@ -102,15 +108,12 @@ public class principalNotificaciones extends javax.swing.JFrame {
             .addGroup(pnl_cuerpoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(pnl_cuerpoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnl_cuerpoLayout.createSequentialGroup()
-                        .addComponent(btn_notificacionesJava)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(pnl_cuerpoLayout.createSequentialGroup()
-                        .addComponent(btn_notificacionesDS)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(btn_notificacionesJava)
+                    .addComponent(btn_notificacionesDS))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(pnl_cuerpoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btn_notificacionesRS)
-                    .addComponent(jButton4))
+                    .addComponent(btn_notificacionPersonalizada))
                 .addGap(42, 42, 42))
         );
         pnl_cuerpoLayout.setVerticalGroup(
@@ -125,7 +128,7 @@ public class principalNotificaciones extends javax.swing.JFrame {
                 .addGap(54, 54, 54)
                 .addGroup(pnl_cuerpoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btn_notificacionesDS)
-                    .addComponent(jButton4))
+                    .addComponent(btn_notificacionPersonalizada))
                 .addContainerGap(78, Short.MAX_VALUE))
         );
 
@@ -146,6 +149,10 @@ public class principalNotificaciones extends javax.swing.JFrame {
     private void btn_notificacionesRSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_notificacionesRSActionPerformed
         notificacionRS();
     }//GEN-LAST:event_btn_notificacionesRSActionPerformed
+
+    private void btn_notificacionPersonalizadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_notificacionPersonalizadaActionPerformed
+        notificacionPersonalizada1();
+    }//GEN-LAST:event_btn_notificacionPersonalizadaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -183,10 +190,10 @@ public class principalNotificaciones extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_notificacionPersonalizada;
     private javax.swing.JButton btn_notificacionesDS;
     private javax.swing.JButton btn_notificacionesJava;
     private javax.swing.JButton btn_notificacionesRS;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel lbl_opcionesNotificaciones;
     private javax.swing.JLabel lbl_titulo;
     private javax.swing.JPanel pnl_cuerpo;
